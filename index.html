@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <style>
+            body {
+
+                background-color: rgb(185, 223, 255);
+                margin: 0%;
+
+            }
+
+
+            .up {
+
+                width: 1263px;
+                height: 100px;
+                background-color: hsl(63, 100%, 28%);
+                position: absolute;
+                margin-top: 0px;
+
+
+            }
+
+
+
+            .up ul li a {
+
+                text-decoration: none;
+                color: white;
+                font-size: 100%;
+
+
+            }
+
+
+            .up ul li {
+
+                display: inline-block;
+                margin-top: 2%;
+                margin-right: 5%;
+
+            }
+
+            #login a {
+
+                color: rgba(240, 240, 240, 0.776);
+                border: 2px solid black;
+                padding: 3px;
+                background-color: brown;
+                font-size: 20px;
+                font-weight: 900;
+                margin-left: -3px;
+                transition: all 0.3s ease-in-out;
+
+            }
+
+            #login :hover {
+
+                transform: scale(1.2);
+                /* Increase the size to 120% */
+                color: rgb(36, 161, 42);
+
+
+            }
+
+            #Sign a {
+
+                font-size: 20px;
+                font-weight: 900;
+
+            }
+
+            .content1 {
+                position: absolute;
+                margin-top: 24px;
+                width: 1263px;
+                height: 600px;
+                background-color: rgba(191, 211, 255, 0.801);
+            }
+
+            #im {
+                background-color: rgb(255, 255, 255);
+                width: 500px;
+
+                height: 200px;
+
+                position: absolute;
+                margin-left: 9%;
+                margin-top: 9%;
+                text-align: center;
+
+                padding: 1%;
+
+
+            }
+
+            #im h1 {
+
+                color: brown;
+
+
+
+            }
+
+            #im p {
+
+                font-style: italic;
+            }
+
+            #stud img {
+
+                width: 50px;
+
+
+            }
+
+            #rocket img {
+
+
+
+                position: absolute;
+                width: 450px;
+                height: 400px;
+                margin-left: 58%;
+                margin-top: 30px;
+                border-radius: 50%;
+
+            }
+
+            .content2 {
+
+
+                position: absolute;
+                margin-top: 24px;
+                width: 1263px;
+                height: 632px;
+                background-color: rgba(172, 197, 253, 0.639);
+                margin-top: 600px;
+
+            }
+
+            .content2 h2 {
+
+                position: absolute;
+
+                margin-left: 45%;
+                margin-top: 2%;
+
+
+            }
+
+            .container {
+
+
+                position: absolute;
+
+                margin-left: 200px;
+
+                margin-top: 100px;
+
+            }
+
+            #anime img {
+
+                position: absolute;
+                margin-left: -9%;
+                margin-top: 2%;
+                width: 300px;
+                height: 450px;
+
+                border-radius: 50%;
+                border: 4px solid rgb(0, 88, 67);
+
+
+            }
+
+            #manga img {
+
+
+                position: absolute;
+                margin-left: -9%;
+                margin-top: 2%;
+                width: 300px;
+                height: 450px;
+
+                border-radius: 50%;
+                border: 4px solid rgb(4, 65, 9);
+
+
+            }
+
+            #walk img {
+
+                position: absolute;
+                margin-left: -9%;
+                margin-top: 2%;
+                width: 300px;
+                height: 450px;
+
+                border-radius: 50%;
+
+                border: 4px solid rgb(115, 121, 0);
+
+            }
+
+
+            .content3 {
+
+
+                position: absolute;
+                margin-top: 24px;
+                width: 1263px;
+                height: 650px;
+                background-color: rgb(174, 211, 244);
+                margin-top: 1232px;
+
+            }
+
+            .content3 h3 {
+
+                position: absolute;
+                margin-left: 63%;
+                margin-top: 5%;
+
+
+            }
+
+            .content3 p {
+
+                width: 500px;
+                position: absolute;
+                margin-left: 50%;
+                margin-top: 12%;
+                text-align: center;
+
+
+            }
+
+            #messages {
+
+
+                position: absolute;
+                margin-left: 50%;
+                margin-top: 19%;
+
+
+            }
+
+            #rocks img {
+
+                position: absolute;
+                margin-left: 5%;
+                margin-top: 12%;
+                width: 480px;
+
+
+            }
+
+            .content4 {
+
+                position: absolute;
+                margin-top: 24px;
+                width: 1263px;
+                height: 1200 px;
+                background-color: rgba(255, 213, 221, 0.559);
+                margin-top: 1882px;
+
+            }
+
+            .content4 h3 {
+
+
+                position: absolute;
+                margin-left: 75%;
+                margin-top: 2%;
+                font-family: 'Times New Roman', Times, serif;
+
+            }
+
+            .content4 h4 {
+
+                position: absolute;
+                margin-left: 43%;
+                margin-top: 4%;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 42px;
+                color: brown;
+            }
+
+            .containerss {
+
+                position: absolute;
+
+                margin-left: 150px;
+                margin-top: 132px;
+
+            }
+
+            #html img {
+
+                width: 300px;
+                height: 200px;
+                margin-left: 0%;
+                transition: transform 1s ease;
+
+            }
+
+            #html img:hover {
+
+                transform: scale(1.8);
+
+
+            }
+
+            #css img {
+
+                width: 300px;
+                height: 200px;
+                transition: transform 1s ease;
+
+            }
+
+            #css img:hover {
+
+                transform: scale(1.8);
+
+
+            }
+
+            #javascript img {
+
+                width: 300px;
+                height: 200px;
+                transition: transform 1s ease;
+
+
+            }
+
+            #javascript img:hover {
+
+                transform: scale(1.8);
+
+
+            }
+
+            #php img {
+
+                position: absolute;
+                margin-left: -34%;
+                margin-top: 3%;
+                width: 300px;
+                height: 200px;
+                transition: transform 1s ease;
+            }
+
+            #php img:hover {
+
+                transform: scale(1.8);
+
+
+            }
+
+            .others p {
+
+
+                position: absolute;
+                margin-top: 47%;
+                margin-left: 44%;
+                font-size: 45px;
+
+            }
+
+            .containerssss {
+
+                position: absolute;
+                margin-top: 55%;
+                margin-left: 12%;
+
+            }
+
+            #hob1 img {
+                transition: transform 1s ease;
+
+            }
+
+            #hob1 img:hover {
+
+
+                transform: scale(1.5);
+
+            }
+
+            #hob2 img {
+                transition: transform 1s ease;
+
+            }
+
+            #hob2 img:hover {
+
+
+                transform: scale(1.5);
+
+            }
+
+            #hob3 img {
+                transition: transform 1s ease;
+
+            }
+
+            #hob3 img:hover {
+
+
+                transform: scale(1.5);
+
+            }
+
+            #proj1 img {
+
+                width: 300px;
+                height: 200px;
+                transition: transform 1s ease;
+
+            }
+
+            #proj1 img:hover {
+
+                transform: scale(1.5);
+
+
+            }
+
+
+
+            #proj2 img {
+
+                width: 300px;
+                height: 200px;
+                transition: transform 1s ease;
+
+            }
+
+            #proj2 img:hover {
+                transform: scale(1.5);
+
+
+
+            }
+
+
+            #proj3 img {
+
+                width: 300px;
+                height: 200px;
+                transition: transform 1s ease;
+
+            }
+
+            #proj3 img:hover {
+
+
+                transform: scale(1.5);
+            }
+
+            #histo img {
+
+                width: 300px;
+                height: 400px;
+                position: absolute;
+                margin-top: 23%;
+                margin-left: -66%;
+
+                transition: transform 1s ease;
+
+
+            }
+
+            #histo img:hover {
+                transform: scale(1.5);
+
+
+
+
+            }
+
+
+            footer {
+
+                height: 100px;
+                width: 1263px;
+                background-color: rgba(60, 91, 98, 0.806);
+
+                position: absolute;
+                margin-top: 256%;
+                margin-left: 0%;
+
+
+            }
+
+            #reser p {
+
+                margin-top: 6%;
+                margin-left: 67%;
+                font-size: larger;
+
+            }
+
+            #fb img {
+                position: absolute;
+                margin-top: 2%;
+                margin-left: 3%;
+                width: 50px;
+                height: 50px;
+
+
+            }
+
+
+
+            #insta img {
+                position: absolute;
+                margin-top: 2%;
+                margin-left: 10%;
+                width: 50px;
+                height: 50px;
+
+
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+
+            div {
+
+                transition: transform 0.3s ease-in-out;
+
+            }
+
+            #twitter img {
+                position: absolute;
+                margin-top: 2%;
+                margin-left: 17%;
+                width: 50px;
+                height: 50px;
+
+
+            }
+
+
+
+            #navv :hover {
+
+
+                color: brown;
+
+
+
+            }
+
+            #fb img {
+
+                transition: transform 1s ease;
+
+
+            }
+
+            #fb img:hover {
+
+                transform: scale(1.8);
+
+            }
+
+            #insta img {
+
+                transition: transform 1s ease;
+
+
+            }
+
+            #insta img:hover {
+
+                transform: scale(1.8);
+
+            }
+
+            #twitter img {
+
+                transition: transform 1s ease;
+
+
+            }
+
+            #twitter img:hover {
+
+                transform: scale(1.8);
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="up">
+
+            <div id="navv">
+
+                <ul>
+                    <li> <a href=". ">Home</a> </li>
+                    <li> <a href=".content2">About</a> </li>
+
+
+                    <li> <a href=".content3">Feedbacks</a> </li>
+                    <li> <a href=".content4">My Works</a> </li>
+
+                    <li> <span id="login"><a href="login.html">LOGIN</a> </span></li>
+                    <li> <span id="Sign"><a href="registrationform.html">SIGN UP</a></span> </li>
+                </ul>
+
+
+
+            </div>
+
+
+
+
+            <div class="content1">
+
+                <div id="im">
+
+                    <h1>I'm Manuelo Salumbides II</h1>
+                    <p>I am a student at the University of Nueva Caceres taking a bachelor of science and information
+                        technology course</p>
+                </div>
+
+                <div id="rocket">
+                    <img src="https://i.gifer.com/C6ix.gif" alt="">
+                </div>
+            </div>
+
+
+            <div class="content2">
+
+                <h2>My Hobbies</h2>
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col">
+                            Watching Anime
+
+                            <div id="hob1">
+
+                                <div id="anime">
+                                    <img src="https://techlekh.com/wp-content/uploads/2021/05/watching-animie.jpg"
+                                        alt="">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="col">
+                            Reading Manga
+
+                            <div id="hob2">
+                                <div id="manga"><img
+                                        src="https://www.wikihow.com/images/thumb/3/3c/Read-Manga-Step-4.jpg/v4-460px-Read-Manga-Step-4.jpg.webp"
+                                        alt=""></div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            Walking
+
+                            <div id="hob3">
+                                <div id="walk">
+
+                                    <img src="https://img.freepik.com/premium-vector/young-good-looking-man-doing-walk-pose_97632-4854.jpg?w=2000"
+                                        alt="">
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+            <div class="content3">
+
+                <h3>Do You Like My Works?</h3>
+
+                <p>Thank you for visiting my portfolio. I would greatly appreciate your feedback and suggestions.
+                    Please take a moment to
+                    share your thoughts:</p>
+
+                <div id="rocks">
+                    <img src="https://cdn.dribbble.com/users/163741/screenshots/1228007/dribbble_shot_hq.gif" alt="">
+                </div>
+
+                <div id="messages">
+
+                    <form method="POST" action="message.php">
+
+                        <label for="message">Message:</label><br>
+                        <textarea id="message" name="message" rows="10" cols="70" required></textarea>
+                        <br><br>
+                        <input type="submit" value="Submit">
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="content4">
+
+                <h3>My Works</h3>
+
+                <h4>Certificates</h4>
+
+                <div class="containerss">
+                    <div class="row">
+
+                        <div class="col-sm">
+                            <div id="html"><img src="pics/html.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div id="css"><img src="pics/css.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div id="javascript"><img src="pics/javascript.jpg" alt="">
+                            </div>
+                            <div class="col-sm">
+                                <div id="php"><img src="pics/php.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="others">
+
+
+                    <p>Others</p>
+
+
+                    <div class="containerssss">
+                        <div class="row">
+                            <div class="col-sm">
+
+                                <div id="proj1">
+
+                                    <a href="index1.html">
+                                        <img src="pics/pic1png.png" alt="">
+                                    </a>
+
+                                </div>
+
+
+                            </div>
+                            <div class="col-sm">
+                                <div id="proj2">
+
+                                    <a href="playlist.html">
+                                        <img src="pics/playlist.png" alt="">
+                                    </a>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-sm">
+
+                                <div id="proj3">
+                                    <a href="electric.html">
+                                        <img src="pics/elec.png" alt="">
+                                    </a>
+
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="col-sm">
+
+                                <div id="histo">
+
+
+                                    <img src="pics/history.png" alt="">
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+            <footer>
+
+                <div id="fb">
+
+
+                    <a href="https://www.facebook.com/"> <img
+                            src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/2048px-Facebook_f_logo_%282021%29.svg.png"
+                            alt=""></a>
+
+
+                </div>
+
+                <div id="insta">
+
+
+                    <a href="https://www.instagram.com/"> <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
+                            alt=""></a>
+
+
+                </div>
+
+                <div id="twitter">
+
+
+                    <a href="https://twitter.com/home" alt=""> <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png?20220821125553"
+                            alt=""></a>
+
+
+                </div>
+
+                <div id="reser">
+                    <p>&copy; 2023 Your Website Name. All rights reserved.</p>
+                </div>
+
+
+            </footer>
+
+
+
+
+
+
+
+        </div>
+
+        <script>
+            // Smooth scrolling anchor links
+            document.querySelectorAll('a[href^="."]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+
+
+    </body>
+
+</html>

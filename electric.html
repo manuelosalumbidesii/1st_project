@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Electric Consumption Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                background-color: #86860069;
+            }
+
+            h1 {
+                color: #696804;
+                margin-top: 20px;
+            }
+
+            form {
+                display: inline-block;
+                text-align: left;
+            }
+
+            label {
+                display: inline-block;
+                width: 150px;
+                text-align: left;
+            }
+
+            input[type="number"] {
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+
+            input[type="submit"] {
+                background-color: #190852;
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: none;
+                cursor: pointer;
+            }
+
+            h2 {
+                color: #333;
+            }
+
+            p {
+                font-size: 24px;
+                font-weight: bold;
+                color: #4CAF50;
+            }
+
+            .p1 {
+
+                position: absolute;
+                margin-top: 100px;
+                margin-left: 530px;
+                background-color: rgba(198, 113, 113, 0.269);
+                width: 600px;
+                height: 300px;
+
+
+            }
+
+            .left img {
+                width: 436px;
+                height: 492px;
+
+                position: absolute;
+                margin-left: -44%;
+                margin-top: 4%;
+
+            }
+
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <div class="p1">
+
+            <h1>Electric Consumption Calculator</h1>
+
+            <form action="calculate.php" method="POST">
+
+                <label for="prev">Previous Reading:</label>
+
+                <input type="number" id="prev" name="prev" required><br><br>
+
+                <label for="curr">Current Reading:</label>
+                <input type="number" id="curr" name="curr" required><br><br>
+
+                <label for="unit">Unit (KWH)</label>
+                <input type="number" id="unit" name="unit" required> <br><br>
+
+                <input type="submit" value="Calculate">
+            </form>
+
+        </div>
+
+        <div class="left">
+
+            <img src="https://uschamber.imgix.net/https%3A%2F%2Fwww.uschamber.com%2Fassets%2Fimages%2FGettyImages-1299277969.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fm=jpg&fp-x=0.5&fp-y=0.5&h=600&q=80&w=1200&s=020895f9f76950e721a3fc5f62d41731"
+                alt="">
+
+        </div>
+
+    </body>
+
+</html>

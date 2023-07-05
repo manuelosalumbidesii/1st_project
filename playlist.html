@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+
+        <style>
+            * {
+                margin: 0;
+            }
+
+            .container {
+                width: 100%;
+                height: 618px;
+                background-image: url("https://cdn.wallpapersafari.com/82/93/IGbXt1.jpg");
+                background-position: cover;
+                background-position: center;
+
+            }
+
+            .header {
+                width: 100%;
+                height: 50px;
+                background-color: rgba(56, 11, 11, 0.655);
+            }
+
+            .header ul li {
+
+                color: aliceblue;
+                display: inline-block;
+                margin-right: 50px;
+                margin-top: 18px;
+                float: right;
+            }
+
+            #logo img {
+
+                width: 120px;
+                height: 50px;
+
+                position: absolute;
+                left: 2%;
+
+
+
+
+            }
+
+            .bodyLeft {
+
+                position: absolute;
+
+
+                top: 60px;
+
+                width: 250px;
+                height: 543px;
+
+                background-color: rgba(9, 36, 59, 0.502);
+
+                color: aliceblue;
+
+            }
+
+
+
+            #brooke img {
+                width: 122px;
+                height: 56px;
+                position: absolute;
+                top: 182px;
+                left: 63px;
+
+            }
+
+            #darlene img {
+
+
+                width: 122px;
+                height: 56px;
+                position: absolute;
+                top: 271px;
+                left: 63px;
+
+
+            }
+
+            #joel img {
+
+
+                width: 122px;
+                height: 56px;
+                position: absolute;
+                top: 359px;
+                left: 63px;
+
+
+            }
+
+            #marty img {
+
+
+                width: 122px;
+                height: 56px;
+                position: absolute;
+                top: 444px;
+                left: 63px;
+
+
+            }
+
+            #david img {
+
+
+                width: 122px;
+                height: 56px;
+                position: absolute;
+                top: 535px;
+                left: 63px;
+
+
+            }
+
+
+
+            .bodyLeft ul li {
+
+                text-align: center;
+                list-style-type: none;
+
+                margin-top: 70px;
+
+                margin-right: 38px;
+
+
+            }
+
+            .bodymid {
+
+
+                width: 820px;
+                height: 415px;
+
+                background-color: rgba(7, 7, 41, 0.664);
+
+                position: absolute;
+                left: 21%;
+                top: 62px;
+
+
+
+            }
+
+            .pics1 img {
+
+                width: 150px;
+                height: 100px;
+                margin-right: 2px;
+
+
+            }
+
+            .music1 {
+
+                position: absolute;
+                top: 70px;
+                left: 20px;
+            }
+
+            .music1titles {
+
+                color: aliceblue;
+                position: absolute;
+
+                top: 180px;
+                left: 40px;
+
+
+            }
+
+            .music1titles span {
+
+
+                margin-right: 50px;
+                text-decoration: wavy;
+
+            }
+
+            .pics2 img {
+
+                width: 150px;
+                height: 100px;
+                margin-right: 2px;
+
+
+            }
+
+            .music2 {
+
+                position: absolute;
+                top: 230px;
+                left: 20px;
+            }
+
+            .music2titles {
+
+                color: aliceblue;
+                position: absolute;
+
+                top: 350px;
+                left: 40px;
+
+
+            }
+
+            .music2titles span {
+
+
+                margin-right: 50px;
+                text-decoration: wavy;
+
+            }
+
+            #through {
+
+                margin-left: 4px;
+            }
+
+            #selecartist img {
+
+                width: 700px;
+                height: 500x;
+                position: absolute;
+                left: 0px;
+
+            }
+
+            #joinUs {
+                background-color: rgba(2, 2, 0, 0.804);
+                color: rgb(255, 233, 33);
+                height: 372px;
+                width: 200px;
+                position: absolute;
+                left: 70%;
+                text-align: center;
+                font-size: 80px;
+
+                font-style: italic;
+            }
+
+            #popularsongs {
+                position: absolute;
+                top: 20px;
+                left: 0px;
+                color: aliceblue;
+
+            }
+
+            #popularsongs span {
+
+                margin-left: 50px;
+                font-size: 20px;
+                font-style: italic;
+            }
+
+            .bodyright {
+                position: absolute;
+                left: 1100px;
+                top: 63px;
+                background-color: rgba(7, 25, 42, 0.79);
+                width: 150px;
+                height: 190px;
+            }
+
+            .bodyright ul li a {
+
+                text-decoration: none;
+                list-style-type: none;
+                color: aliceblue;
+            }
+
+            .bodyright ul li {
+
+
+                margin-top: 20px;
+
+
+
+            }
+
+            .bodymidbottom {
+
+                width: 645px;
+                height: 125px;
+                background-color: rgba(17, 11, 69, 0.575);
+                position: absolute;
+                top: 482px;
+                left: 345px;
+
+
+            }
+
+            .bodymidbottom img {
+
+                position: absolute;
+                left: 233px;
+                top: 3px;
+                height: 120px;
+
+            }
+
+            .bodyrightbottom {
+
+                width: 150px;
+                height: 250px;
+                background-color: rgba(8, 45, 78, 0.5);
+                position: absolute;
+                top: 280px;
+                left: 1100px;
+                font-size: 50px;
+
+            }
+
+            .bodyrightbottom p {
+
+                text-align: center;
+                color: rgb(205, 205, 205);
+
+            }
+
+            #picss img {
+                width: 200px;
+                height: 80px;
+                position: absolute;
+                top: 30px;
+                left: 30px;
+            }
+
+            footer {
+
+                width: 100%;
+                height: 100px;
+                background-color: rgba(255, 229, 229, 0.5);
+                position: absolute;
+                top: 990px;
+            }
+
+            #links ul li {
+
+                list-style-type: none;
+                text-decoration: none;
+                margin-top: 10px;
+                text-align: center;
+                font-style: italic;
+
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+
+        <div class="container">
+
+            <div class="header">
+
+                <div id="logo">
+
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/404/703e41126117585.Y3JvcCwxMDgwLDg0NCwwLDExNw.jpg"
+                        alt="">
+
+                    </div>
+
+                <ul>
+                    <li>HOME</li>
+                    <li>PHOTOS</li>
+                    <li>VIDEOS</li>
+                    <li>MUSIC</li>
+                    <li>EVENT</li>
+
+                </ul>
+
+            </div>
+
+
+            <div class="bodyLeft">
+
+                <h2 style="text-align: center;">Select Artist</h2>
+
+
+                <div id="picss">
+
+                    <img src="https://m.media-amazon.com/images/I/715CaMF-0WL.png" alt="">
+
+
+                </div>
+
+                <ul>
+                    <li>Brooke Fraser </li>
+                    <li>Darlene</li>
+                    <li>Joel Houston</li>
+                    <li>Marty Sampson</li>
+                    <li>David Ware</li>
+                </ul>
+
+
+            </div>
+
+
+            <div class="bodyright">
+
+                <h3s style="color: aliceblue; margin-left: 55px;">Recents</h3>
+
+                    <ul>
+                        <li> <a href="">Jesus I need you</a> </li>
+                        <li> <a href="">At the cross</a></li>
+                        <li> <a href="">King of kings</a> </li>
+                        <li> <a href="">Mighty save</a></li>
+                    </ul>
+
+            </div>
+
+            <div class="pics">
+
+                <div id="brooke">
+
+                    <img src="https://cdn.hillsong.com/wp-content/uploads/2016/10/30000010/BrookeLigertwood-feature_1.jpg"
+                        alt="">
+                </div>
+
+                <div id="darlene">
+
+                    <img src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSorUgg81f71iWZxuQ0WZMDpWOjn4pEt-c-GCw-Q1XtN2D-tYTUfWJam5uOYWmRb1bfHH4ICn3Kp86MUME"
+                        alt="">
+
+
+                </div>
+
+                <div id="joel">
+
+                    <img src="https://relevantmagazine.com/wp-content/uploads/2019/05/joel-houston-interview.jpg"
+                        alt="">
+
+
+
+                </div>
+
+                <div id="marty">
+
+                    <img src="https://christiantoday-4cf9.kxcdn.com/en/full/77865/marty-sampson.png" alt="">
+
+
+                </div>
+
+                <div id="david">
+
+                    <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTg7RPMeBhBwltud9f_Mp8AFzdT1YLmIqgF7Pv5ptKNrgHkrKIZ"
+                        alt="">
+
+
+                </div>
+
+
+            </div>
+
+            <!--bodyyyy-->
+
+            <div class="bodymid">
+
+                <div id="popularsongs">
+
+                    <span>Popular Songs</span> <span>Album</span> <span>Live</span> <span>Playlists</span>
+
+
+                </div>
+
+
+                <div class="music1">
+
+                    <div class="pics1">
+
+                        <img src="https://i.ytimg.com/vi/mpcQjpatsyA/maxresdefault.jpg" alt="">
+
+                        <img src="https://i.ytimg.com/vi/nQWFzMvCfLE/maxresdefault.jpg" alt="">
+
+                        <img src="https://i.ytimg.com/vi/uz9xKtRhpjc/maxresdefault.jpg" alt="">
+
+                        <img src="https://media.swncdn.com/godtube/resource/popular-hymns/image/here-i-am-to-worship.jpg"
+                            alt="">
+
+                        <img src="https://i.ytimg.com/vi/eyZDXA6_crE/maxresdefault.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="music1titles">
+
+                    <span>I surrender</span> <span>What a beautiful name</span>
+                    <span style="margin-right: 38px;">Broken vessels</span>
+                    <span> Here I am to worship</span>
+                    <span>Still</span>
+
+
+                </div>
+
+                <!--muisc22------------------------------------------------->
+
+
+                <div class="music2">
+
+                    <div class="pics2">
+
+                        <img src="https://i.ytimg.com/vi/5_aIauL2xKA/maxresdefault.jpg" alt="">
+
+                        <img src="https://i.ytimg.com/vi/4GthZbt1lPo/maxresdefault.jpg" alt="">
+
+                        <img src="https://i.ytimg.com/vi/mUtJz7H_DCE/maxresdefault.jpg" alt="">
+
+                        <img src="https://i.ytimg.com/vi/H7pJb49vVQY/mqdefault.jpg" alt="">
+
+                        <img src="https://i.ytimg.com/vi/iHyugEk6C0s/maxresdefault.jpg" alt="">
+
+                    </div>
+
+                </div>
+
+                <div class="music2titles">
+
+                    <span>Shout to the Lord</span> <span id="through">Through it all</span>
+                    <span style=" margin-right: 90px;">With all I am</span>
+                    <span style="margin-right: 120px;">Be still</span>
+                    <span>To you</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="bodymidbottom">
+
+            <img src="https://efento.pl/wp-content/uploads/2016/02/play-bottom.png" alt="">
+
+        </div>
+
+        <div class="bodyrightbottom">
+
+            <p>Select your favorite music</p>
+
+
+        </div>
+
+
+        <div class="body2">
+
+            <div id="selecartist">
+
+                <img src="https://www.ccmmagazine.com/wp-content/uploads/2015/06/HSW-Awake-Alt3-750x400.jpg" alt="">
+
+            </div>
+
+            <div id="joinUs">
+                <p> Come and join us </p>
+            </div>
+
+        </div>
+
+
+        <footer>
+
+            <div id="links">
+
+                <ul>
+                    <li>FACEBOOK</li>
+                    <li>INSTAGRAM</li>
+                    <li>TWITTER</li>
+                </ul>
+
+            </div>
+
+        </footer>
+
+
+    </body>
+
+</html>
